@@ -1,0 +1,32 @@
+.card-imagem {
+	border: none;
+	border-radius: 1.2rem;
+
+	.card-img,
+	.card-img-top {
+		height: 8.125rem;
+		background-size: cover;
+		border-radius: 1.2rem 1.2rem 0 0;
+	}
+
+	.card-body {
+		background-color: #064db9;
+		color: white;
+		border-radius: 0 0 1.2rem 1.2em;
+
+		.card-title {
+			margin: 0;
+			font-weight: 600;
+			font-size: 1.4em;
+		}
+	}
+
+	// Cores diferentes por categoria
+	@each $categoria, $cor in $cores {
+		&.#{$categoria} {
+			.card-body {
+				background-color: $cor;
+			}
+		}
+	}
+}

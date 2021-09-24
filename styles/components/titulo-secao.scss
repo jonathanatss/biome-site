@@ -1,0 +1,38 @@
+.titulo-secao {
+  .titulo {
+    font-weight: 100;
+    border-bottom: 1px solid;
+  }
+
+  .ver-mais {
+    border: 1px solid;
+    border-radius: 100px;
+    padding: 0em 0.6em;
+    font-size: .75em;
+    transition: color .15s, background-color .15s;
+
+    &:hover {
+      color: #FFF;
+      background-color: map-get($cores, "tipografia");
+    }
+  }
+
+  // Cores diferentes por categoria
+  @each $categoria, $cor in $cores {
+    &.#{$categoria} {
+      .titulo {
+        color: $cor;
+      }
+
+      .ver-mais {
+        color: $cor;
+        background-color: transparent;
+
+        &:hover {
+          color: #FFF;
+          background-color: $cor;
+        }
+      }
+    }
+  }
+}

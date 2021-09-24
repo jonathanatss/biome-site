@@ -1,0 +1,16 @@
+.div_{
+   
+    margin-bottom: 20px;
+}
+
+.title_{
+    padding-top: 2rem;
+    font-style: normal;
+    font-size: 2rem ;
+    font-weight: Bold;
+    display: inline;
+    padding-right: 10%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    margin:0;
+}

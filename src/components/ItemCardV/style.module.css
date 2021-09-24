@@ -1,0 +1,22 @@
+.card_ {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0.1em 0em;
+    border-radius: 0;
+}
+
+.card_img {
+    max-width: 30%;
+    height: auto;
+}
+
+.card_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+}

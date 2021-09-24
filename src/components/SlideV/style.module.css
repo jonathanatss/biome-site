@@ -1,0 +1,35 @@
+.col_{
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 0.25em;
+}
+
+.scrollv{
+overflow-y: scroll;
+max-height:200px;
+/* width */
+}
+.scrollv::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.scrollv::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius:15px;
+}
+
+/* Handle */
+.scrollv::-webkit-scrollbar-thumb {
+  background: #ccc; 
+  border-radius:15px;
+}
+
+/* Handle on hover */
+.scrollv::-webkit-scrollbar-thumb:hover {
+  background: #515A5A; 
+}
+
+.row_align{
+  justify-content: space-around;
+}

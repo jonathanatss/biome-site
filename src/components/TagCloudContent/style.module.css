@@ -1,0 +1,6 @@
+.tagCloud{
+    width: 60rem;
+}
+.tagCloud > span{
+    padding-right: 1rem;
+}

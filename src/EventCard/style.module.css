@@ -1,0 +1,58 @@
+.card_evento{
+    width: 30rem;
+    height: 3.9rem;
+    background-color: #efefef;
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: .5rem;
+    padding: .25rem;
+}
+
+.conteudo{
+    flex: 1;
+    padding-left: 1rem;
+    max-width: 30rem;
+    margin-bottom: 0;
+    
+}
+
+.title{
+    color: #0095db;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.info{
+    color: #164194;
+    font-size: .8rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 0.025rem;
+}
+
+.tags{
+    font-size: .6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10rem;
+}
+
+.invididual_tag{
+    margin-right: 2rem;
+    display: inline-block;
+    color: gray;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: .35rem;
+}
+

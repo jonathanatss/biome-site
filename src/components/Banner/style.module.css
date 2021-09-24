@@ -1,0 +1,74 @@
+.img_background {
+    height: 50vh;
+    width: auto;
+    box-shadow: inset 10px 629px 4px rgba(0, 0, 0, 0.25);
+    filter: blur(20px);
+}
+
+.carousel_caption {
+    position: absolute;
+    right: 15%;
+    top: 30%;
+    -ms-transform: translateY(-30%);
+    transform: translateY(-30%);
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+
+}
+
+.carousel_caption img {
+    width: 100%;
+
+    @media (max-width: 800px) {
+        width: 45vw;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+.text_banner {
+    width: 100%;
+    padding: 0;
+    font-family: "Open Sans Hebrew", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    align-self: center;
+    display: block;
+    text-align: left;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+.title_banner {
+    font-weight: 800;
+    font-size: 1.7rem;
+    line-height: 54px;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    mix-blend-mode: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @media (max-width: 800px) {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+}
+
+.subtitle_banner {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: -0.03em;
+
+    @media (max-width: 800px) {
+        font-size: 0.9rem;
+        line-height: 1rem;
+    }
+}

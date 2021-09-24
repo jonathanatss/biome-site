@@ -1,0 +1,70 @@
+.card-evento {
+	background-color: #efefef;
+	border: none;
+	border-radius: 0.25rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 0.5rem;
+	// padding: 0 0 1rem 0;
+
+	.data {
+		color: map-get($cores, "white");;
+		display: flex;
+    flex-direction: column;
+		justify-content: center;
+
+		.dia {
+			background-color: map-get($cores, "cor-primaria");
+			border-top-left-radius: 0.25rem;
+			border-top-right-radius: 0.25rem;
+			display: flex;
+			font-size: 1.5rem;
+			font-weight: 900;
+			justify-content: center;
+			padding: 0 1.25rem;
+			position: relative;
+		}
+
+		.mes-ano {
+			background-color: map-get($cores, "cor-secundaria");
+			border-bottom-left-radius: 0.25rem;
+			border-bottom-right-radius: 0.25rem;
+			font-size: 0.8rem;
+			font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+			padding: 0 1.25rem;
+		}
+	}
+
+	.conteudo {
+		flex: 1;
+		padding: 0.25rem 0.25rem 0.25rem 1rem;
+
+		.titulo {
+			color: map-get($cores, "cor-secundaria");
+			font-size: 0.85rem;
+			font-weight: 600;
+		}
+
+		.info {
+			color: map-get($cores, "cor-primaria");
+			font-size: 0.7rem;
+			font-weight: 600;
+		}
+
+		.tags {
+			font-size: 0.6em;
+
+			.badge {
+				font-weight: 600;
+			}
+		}
+	}
+}
+
+.link-evento
+{
+	text-decoration: none!important;
+}

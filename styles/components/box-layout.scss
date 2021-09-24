@@ -1,0 +1,188 @@
+.box-layout {
+	border: 1px solid;
+	border-radius: 1.4rem;
+	background-color: #fff;
+	padding: 0.25rem .25rem;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+}
+
+/* Estilo da página e dos cards de editais e eventos */
+.box {
+	&-form {
+		flex-direction: column;
+		justify-content: center;
+
+		&-content {
+			flex-direction: column;
+			justify-content: center;
+
+			&-select {
+				border-color: map-get($cores, 'black');
+				margin: 1rem 0;
+			}
+		}
+	}
+
+	&-editais {
+		&-novos,
+		&-andamentos,
+		&-encerrados {
+			// If we do want the items to stretch
+			flex: 1 1 19rem; // 304px
+		}
+	}
+
+	&-status {
+		border-radius: 0.25rem;
+		font-size: 1.4rem;
+	}
+
+	&-card {
+		// margin: 1rem 0;
+		max-height: 22rem;
+		min-height: 22rem;
+		overflow-y: auto;
+
+		&-border {
+			border-radius: 1rem;
+			border-width: 1px;
+		}
+
+		&-message {
+			font-size: 1.2rem;
+			padding: 0 1.5rem;
+		}
+
+		&-badge {
+			border-radius: 0.5rem 0.5rem 0 0;
+			font-size: 1rem;
+			margin: 0 0 0 1.5rem;
+		}
+
+		&-content {
+			background-color: rgba(245, 245, 245, 1);
+			padding: 0rem 0rem;
+			font-size: 0.8rem;
+		}
+	}
+
+	&-eventos-container {
+		display: grid;
+		grid-gap: 4rem;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+
+		.box-imagem-container {
+			display: grid;
+			height: auto;
+			min-height: 10rem;
+			max-height: 10rem;
+			overflow: hidden;
+			place-items: center;
+			position: relative;
+			width: 100%;
+
+      &-imagem-capa {
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+      }
+		}
+
+		.box-card-body,
+		.box-card-footer {
+			background-color: map-get($cores, 'grey');
+		}
+	}
+
+	@include for-size(lg) {
+		&-form {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-title {
+				text-align: left;
+			}
+
+			&-content {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		&-editais {
+			&-novos,
+			&-andamentos,
+			&-encerrados {
+				// If we don't want the items to stretch
+				flex: 0 1 16rem; // 304px
+			}
+		}
+
+		&-status {
+			font-size: 1.6rem;
+		}
+	}
+
+	@include for-size(xl) {
+		&-form {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-title {
+				text-align: left;
+			}
+
+			&-content {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		&-editais {
+			&-novos,
+			&-andamentos,
+			&-encerrados {
+				// If we don't want the items to stretch
+				flex: 0 1 19rem; // 304px
+			}
+		}
+
+		&-card {
+			max-height: 50rem;
+			min-height: 20rem;
+		}
+	}
+
+	@include for-size(xxl) {
+		&-form {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-title {
+				text-align: left;
+			}
+
+			&-content {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		&-editais {
+			&-novos,
+			&-andamentos,
+			&-encerrados {
+				// If we don't want the items to stretch
+				flex: 0 1 19rem; // 304px
+			}
+		}
+
+		&-card {
+			max-height: 50rem;
+			min-height: 20rem;
+		}
+	}
+}

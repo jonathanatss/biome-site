@@ -1,0 +1,86 @@
+footer {
+    background: linear-gradient(90deg, map-get($cores, "cor-secundaria") 50%, map-get($cores, "cor-primaria") 50%);
+
+    .lado-esquerdo {
+        background-color: map-get($cores, "cor-secundaria");
+
+        .menu-desktop {
+            font-size: .7rem;
+            border-left-style: solid;
+
+            h5 {
+                padding: 0;
+                margin: 0 0 .65rem .65rem;
+                color: #fff;
+                font-weight: 600;
+                font-size: inherit;
+            }
+            
+            ul {
+                padding: 0 0 0 .65rem;
+                li{
+                    text-align: -webkit-match-parent;
+                    display: list-item;
+                    box-sizing: border-box;
+                    a {
+                        display: inline;
+                        font-size: .7rem;
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: block;     
+        }
+
+        p {
+            margin: 0;
+            color: #fff;
+            font-size: .8rem;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+
+    .lado-direito {
+        background-color: map-get($cores, "cor-primaria");
+
+        h3,
+        h4 {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        input[type=submit] {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: map-get($cores, "cor-primaria");
+        }
+        .recaptcha {
+            width: 304px; 
+            height: 78px;
+        }
+
+        .redes-sociais {
+            a {
+                color: #fff;
+                .icons {
+                    position: relative;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+//Icones das Mídias Sociais
+s {
+    margin:auto;
+    padding:auto;
+    display:flex;
+    height: 100vh;
+    
+       
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin: 0 5px;
+}
+
+ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 45px;
+    color:  #000;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: white;
+    
+}
+
+ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgb(7, 3, 3);
+    border-radius: 100%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s cubic-bezier(.95,.32,.37,1.31)
+}
+
+ul li a:hover:before{
+    transform: scale(1);
+}
+
+ul li:nth-child(1) a:hover:before{
+    background: #3b5999;
+}
+ul li:nth-child(2) a:hover:before{
+    background: #ef3c5e;
+}
+ul li:nth-child(3) a:hover:before{
+    background: #1da1f2;
+}
+ul li:nth-child(4) a:hover:before{
+    background: #0078b5;
+}
+
+ul li:nth-child(5) a:hover:before{
+    background: #fe0002;
+}
+
+
+//Textos e Títulos
+.history_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+    margin-bottom: 3em;
+    height: 645px;
+    margin-top: 2em;
+  }
+  
+  .history_layout {
+    padding: 30px;
+    box-shadow: 15px 10px 4px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+    margin-bottom: 45px;
+  }
+  
+  .history_p p {
+    text-align: justify;
+    font-size: 1em;
+  }
+  
+  .history_ep {
+    text-align: justify;
+    margin-left: 10%; 
+  }
+  
+  .definition_layout{
+    background: #0095DB;
+    padding: 30px;
+    box-shadow: 15px 10px 4px rgb(0 0 0 / 25%);
+    border-radius: 15px;
+    margin-bottom: 45px;
+  }
+  
+  .definition_layout p{
+    color: white;
+    font-weight: bold;
+  }
+
+
+//Titulo
+.title_{
+    padding-top: auto;
+    font-style: normal;
+    font-size: 2rem ;
+    font-weight: Bold;
+    display: inline;
+    padding-right: 10%;
+    color:#3A68A1;
+    margin:auto;
+}

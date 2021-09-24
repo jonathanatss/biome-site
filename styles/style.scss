@@ -1,0 +1,19 @@
+@import './elements/cores';
+@import './elements/tipografia';
+
+@import './core/breakpoints';
+@import './core/base';
+
+@import './components/barra-acessibilidade';
+@import './components/box-layout';
+@import './components/card-edital';
+@import './components/card-evento';
+@import './components/card-imagem';
+@import './components/card-noticia';
+@import './components/card-post';
+@import './components/chamada-noticia';
+@import './components/footer';
+@import './components/navbar';
+@import './components/paginacao';
+@import './components/titulo-secao';
+@import './components/icons-socialmidia.scss';

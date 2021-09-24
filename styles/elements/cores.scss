@@ -1,0 +1,64 @@
+$cores: (
+	"transparent": transparent,
+	"white": #ffffff,
+	"grey": #f3f4f6,
+	"black": #000000,
+
+  "fundo": #F9F9F9,
+  "cor-primaria": #164194,
+  "cor-secundaria": #0095DB,
+  "tipografia": #4D4D4D,
+
+  "novo": #89BB7E,
+  "andamento": #2A4670,
+  "encerrado": #D61616,
+
+  "institucional": #545454,
+  "nucleos": #00A8FF,
+  "projetos": #AFA625,
+  "ensino": #255897,
+  "eventos": #B9272E,
+  "editais": #476E34,
+  "servicos": #EF8F14,
+
+  "azul-ufrn": #3195d7,
+  "azul-imd": #1e5fa1
+);
+
+// Utilidades
+
+// Color
+@each $categoria, $cor in $cores {
+  .color-#{$categoria} {
+    color: $cor;
+  }
+}
+
+// Background color
+@each $categoria, $cor in $cores {
+  .bg-#{$categoria} {
+    background-color: $cor;
+  }
+}
+
+// Border color
+@each $categoria, $cor in $cores {
+  .border-color-#{$categoria} {
+    border-color: $cor;
+  }
+}
+
+// Button color
+@each $categoria, $cor in $cores {
+  .btn-#{$categoria} {
+    background-color: $cor;
+		color: rgba($color: white, $alpha: 1.0);
+
+		&.active,
+		&:active,
+		&:hover {
+			background-color: rgba($color: $cor, $alpha: 0.75);
+			color: rgba($color: white, $alpha: 0.75);
+		}
+  }
+}

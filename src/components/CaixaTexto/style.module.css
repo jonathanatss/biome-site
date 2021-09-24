@@ -1,0 +1,23 @@
+.box{
+    margin: 2px 2vw;
+    padding: 2vh;
+}
+
+.title{
+    background-color: #3A68A1;
+    background-size: contain;
+    padding: 0.3rem;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.paragraph{
+}
+.col_text{
+    border-left: #3A68A1 solid;
+    border-right: #3A68A1 solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 3vh;
+}

@@ -1,0 +1,29 @@
+.div_{
+   
+    margin-bottom: 10px;
+}
+.title_{
+    padding-top: 2rem;
+    display: inline;
+    padding-right: 10%;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin:0;
+}
+.link{
+    text-decoration: none;
+}
+.button_small{
+    border: 0.5px solid;
+    border-radius: 19px;
+    padding: 0em 0.2em;
+    margin:0;
+    font-size: 0.8em;
+    align-self: center;
+    background: inherit !important;
+    color: inherit !important;
+}
+.button_small:hover{
+    font-weight: bold;
+    border-color:initial;
+}

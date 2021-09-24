@@ -1,0 +1,19 @@
+@import "../elements/cores";
+@import "../elements/tipografia";
+
+@import "../core/base.scss";
+
+@import "../components/barra-acessibilidade";
+@import "../components/card-edital";
+@import "../components/card-evento";
+@import "../components/card-imagem";
+@import "../components/card-noticia";
+@import "../components/chamada-noticia";
+@import "../components/navbar";
+@import "../components/titulo-secao";
+
+#secao-navbar {
+	nav.navbar {
+		border: 1px solid #dee2e6;
+	}
+}

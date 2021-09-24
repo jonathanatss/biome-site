@@ -1,0 +1,32 @@
+.button_subs{
+    color: #00608d;
+    background-color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    width: 175px;
+    margin-top: 20px;
+}
+
+.div_check{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 0.25rem;
+    margin-top: 20px;
+}
+
+.title_{
+    padding: 0rem 0.5rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}

@@ -1,0 +1,96 @@
+/* Font-weight */
+.font-weight-light {
+  font-weight: 300;
+}
+
+.font-weight-regular {
+  font-weight: 400;
+}
+
+.font-weight-semibold {
+  font-weight: 600;
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-extrabold {
+  font-weight: 800;
+}
+
+
+
+/* Títulos */
+.titulo-pagina,
+.titulo-sidebar {
+  font-weight: 400;
+  border-bottom-style: solid;
+  display: inline;
+  position: relative;
+  line-height: 4rem;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    border-bottom-color: inherit;
+    border-bottom-style: solid;
+  }
+}
+
+.titulo-pagina {
+  border-bottom-width: 6px;
+
+  &::after {
+    bottom: -6px;
+    width: 120%;
+    border-bottom-width: 6px;
+  }
+}
+
+.titulo-sidebar {
+  border-bottom-width: 4px;
+
+  &::after {
+    bottom: -4px;
+    width: 140%;
+    border-bottom-width: 4px;
+  }
+}
+
+.titulo-div {
+  border: none;
+
+  h2 {
+      font-weight: 700;
+      color: map-get($cores, 'tipografia');
+  }
+
+  h5 {
+      color: map-get($cores, 'tipografia');
+  }
+}
+
+.noticia-data {
+  h6 {
+      font-size: .85rem;
+      color: map-get($cores, 'azul-imd');
+  }
+}
+
+
+
+/* Textos */
+.texto-conteudo,
+.conteudo-noticia p,
+.conteudo-noticia span {
+  color: map-get($cores, "tipografia") !important;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif !important;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
